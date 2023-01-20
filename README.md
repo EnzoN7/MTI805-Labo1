@@ -11,3 +11,5 @@
 ## Besoin d'aide ?
 
 * Run **python cli.py -h**
+
+Pour fermer la fenêtre, appuyer sur une touche du clavier.
