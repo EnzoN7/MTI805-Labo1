@@ -1,5 +1,7 @@
 # Utilisation du programme
 
+La détection des mains est toujours activée. 
+
 ## Mode 'détection faciale'
 
 * Run **python cli.py -d**
