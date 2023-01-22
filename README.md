@@ -1,7 +1,6 @@
 # Utilisation du programme
 
 La détection des mains est toujours activée.
-
 Pour fermer la fenêtre, appuyer sur une touche du clavier.
 
 ## Mode 'détection faciale'
