@@ -1,6 +1,8 @@
 # Utilisation du programme
 
-La détection des mains est toujours activée. 
+La détection des mains est toujours activée.
+
+Pour fermer la fenêtre, appuyer sur une touche du clavier.
 
 ## Mode 'détection faciale'
 
@@ -13,5 +15,3 @@ La détection des mains est toujours activée.
 ## Besoin d'aide ?
 
 * Run **python cli.py -h**
-
-Pour fermer la fenêtre, appuyer sur une touche du clavier.
