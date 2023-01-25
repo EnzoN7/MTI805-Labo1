@@ -1,17 +1,19 @@
 # Utilisation du programme
 
-La détection des mains est toujours activée.
+Le présent programme permet d'analyse les images de votre webcam, d'en détecter les mains, les visages et aussi de pratiquer la reconnaissance faciale.
 
-Pour fermer la fenêtre, appuyer sur une touche du clavier.
+* La détection des mains est toujours activée.
+
+* Pour fermer la fenêtre, appuyer sur une touche du clavier.
 
 ## Mode 'détection faciale'
 
-* Run **python cli.py -d**
+* `python cli.py -d`
 
 ## Mode 'reconnaissance faciale'
 
-* Run **python cli.py -r**
+* `python cli.py -r`
 
 ## Besoin d'aide ?
 
-* Run **python cli.py -h**
+* `python cli.py -h`
