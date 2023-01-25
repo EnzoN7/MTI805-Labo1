@@ -32,22 +32,30 @@ def detect_faces(frame):
 # Détermine si l'un des visages détectés est l'un de ceux enregistré dans MTI805_1/people
 # via la librairie face_recognition.
 def recognize_face(frame):
+    # La taille de l'image est réduite pour améliorer les performances
     small_frame = cv2.resize(frame, (0, 0), fx=0.2, fy=0.2)
+
+    # Conversion de l'image en RVB
     rgb_small_frame = small_frame[:, :, ::-1]
 
+    # Chargement de deux images de références
     known_image_1 = face_recognition.load_image_file("./people/enzo_dimaria.jpg")
-    known_encoding_1 = face_recognition.face_encodings(known_image_1)[0]
-
     known_image_2 = face_recognition.load_image_file("./people/luc_duong.png")
+
+    # Encodage des images pour la reconnaissance faciale
+    known_encoding_1 = face_recognition.face_encodings(known_image_1)[0]
     known_encoding_2 = face_recognition.face_encodings(known_image_2)[0]
 
+    # Stockage des encodages et des noms associés
     known_encodings = [known_encoding_1, known_encoding_2]
     known_names = ["Enzo DM", "Luc Duong"]
 
+    # Détection des visages sur l'image
     face_locations = face_recognition.face_locations(rgb_small_frame)
     face_encodings = face_recognition.face_encodings(rgb_small_frame, face_locations)
     face_names = []
 
+    # Comparaison des encodages de l'image avec les encodages de référence
     for face_encoding in face_encodings:
         matches = face_recognition.compare_faces(known_encodings, face_encoding)
         name = "Autre"
@@ -59,6 +67,7 @@ def recognize_face(frame):
 
         face_names.append(name)
 
+    # Affichage des noms reconnus sur l'image
     for (top, right, bottom, left), name in zip(face_locations, face_names):
         top *= 5
         right *= 5
