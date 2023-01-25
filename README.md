@@ -1,6 +1,6 @@
 # Utilisation du programme
 
-Le présent programme permet d'analyse les images de votre webcam, d'en détecter les mains, les visages et aussi de pratiquer la reconnaissance faciale.
+Le présent programme permet d'analyser les images de votre webcam, d'en détecter les mains, les visages et aussi de pratiquer la reconnaissance faciale.
 
 * La détection des mains est toujours activée.
 
